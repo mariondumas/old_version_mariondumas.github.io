@@ -1,0 +1,458 @@
+/*  
+	Theme Name: 	Marion Dumas
+	Theme URI: 		http://mariondumas.github.io
+*/
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after, .reset {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+img {
+	border:none;
+	vertical-align:middle;
+	max-width:100%;
+	height:auto;
+}
+
+h1, h2, h3, h4, h5, p, ol, ul, form {
+	margin:0 0 1em 0;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+	margin-bottom:0;
+	margin-top:0.5em;
+}
+
+main li {
+	margin:0 0 0.5em 0;
+}
+
+h1, h2, h3, h4, strong, b {
+	font-weight:700;
+}
+
+a {
+	color:#760000;
+	text-decoration:none;
+}
+/*a:visited {
+	color:#9E1111;
+}*/
+a:hover {
+	color:#042e47;
+}
+
+.alignright {
+	float:right;
+	margin:0 0 2em 2em;
+}
+
+.alignleft {
+	float:left;
+	margin:0 2em .5em 0;
+}
+
+/* =========================================== */
+
+html {
+	/*overflow-y: scroll;*/
+	height:100%;
+}
+
+body {
+	font-size:100%;
+	font-family:verdana, arial, sans-serif;
+	font-style:normal;
+	font-weight:400;
+	line-height:1.125;
+	color:#000;
+	padding:1em 0;
+	margin:0 auto;
+	position:relative;
+	width:100%;
+	height:auto;
+	background-color:#7A0001;
+}
+
+div#container {
+	display:block;
+	width:100%;
+	max-width:71.875em;
+	margin:0 auto;
+	background-color:#fff;
+	overflow:visible;
+	position:relative;
+	box-shadow:0.5em 0.5em 1em 0.125em rgba(0,0,0,0.25);
+
+	background:#fff url('images/sidebar.gif') scroll repeat-y left top;
+	background-size:17.391304347826086956521739130435% auto;
+}
+
+footer {
+	padding:0.5em 1em 0.5em 17.391304347826086956521739130435%;
+}
+
+footer div.wrapper {
+	margin:0 0 0 1.5em;
+}
+
+footer div.wrapper > * {
+	font-size:0.625em;
+}
+
+/* =========================================== */
+
+body > div#container > nav {
+	background-color:#042E47;
+	overflow:visible;
+	padding:1em 1em 1em 16%;
+	letter-spacing:0.03125em;
+
+	background:#042E47 url('images/wendy-cadge-branding.gif') scroll no-repeat left center;
+	background-size:17.391304347826086956521739130435% auto;
+}
+
+nav ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+body > div#container > nav > ul, #nav-trigger {
+	width:auto;
+	display:block;
+	border:1px solid transparent;
+	margin:0 0 0 1.5em;
+}
+
+body > div#container > nav > ul > li {
+	display:block;
+	float:left;
+}
+
+body > div#container > nav > ul > li > a, #nav-trigger {
+	font-size:0.75em;
+	font-weight:700;
+	padding:0.0625em 1em;
+	display:block;
+}
+
+#nav-trigger {
+	text-align:right;
+	padding-right:2em;
+}
+
+body > div#container > nav > ul > li > a {
+	border-right:1px solid #fff;
+}
+
+body > div#container > nav > ul > li:first-child > a {
+	padding-left:0;
+}
+
+body > div#container > nav > ul > li:last-child > a {
+	padding-right:0;
+	border-right:none;
+}
+
+body > div#container > nav > ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:4;
+	text-align:left;
+	background-color:#042E47;
+	width:12em;
+	padding: 0.75em 0 0.5em 0;
+	box-shadow:0.5em 0.5em 1em 0.125em rgba(0,0,0,0.25);
+}
+
+body > div#container > nav > ul > li:first-child > ul {
+	left:-0.75em;
+}
+
+body > div#container > nav > ul ul ul {
+	position:absolute;
+	top:0;
+	left:100%;
+	z-index:4;
+}
+
+body > div#container > nav > ul li {
+	position:relative;
+}
+
+body > div#container > nav > ul li:hover > ul {
+	display:block;
+}
+
+body > div#container > nav > ul > li > ul a {
+	font-size:0.75em;
+	padding:0.375em 1em;
+	display:block;
+}
+
+
+body > div#container > nav a {
+	color:#F0D8B2;
+}
+
+body > div#container > nav a:hover {
+	color:#fff;
+}
+
+/* =========================================== */
+
+@media all and (min-width: 50em) {
+
+	body > div#container > nav.responsive > ul {
+		display:block !important;
+	}
+
+	#nav-trigger {
+		display:none;
+	}
+
+	body.home > div#container > nav {
+		background-image:none;
+	}
+
+}
+
+@media all and (max-width: 50em) {
+
+	#nav-trigger {
+		display:block;
+		padding-left:0;
+	}
+
+	#nav-trigger:before {
+		content: "\a0\2261";
+		margin-right:0.25em;
+		padding-top:0.125em;
+		font-weight:700;
+	}
+
+	body > div#container > nav {
+		padding:0.5em 1em;
+		letter-spacing:0.03125em;
+	}
+
+	body > div#container > nav > ul, body > div#container > nav > ul > li,
+	body > div#container > nav > ul ul, body > div#container > nav > ul > li li {
+		text-align:left;
+		display:block;
+		float:none;
+		position:relative !important;
+		top:auto !important;
+		left:auto !important;
+		width:auto !important;
+	}
+
+	body > div#container > nav.responsive > ul {
+		display:none;
+		border-bottom:1px dashed #666;
+		margin:1em 1.5em;
+	}
+
+	body > div#container > nav > ul li {
+		padding:0;
+		border:none;
+	}
+
+	body > div#container > nav > ul a {
+		padding:0.5em 0 !important;
+		display:block;
+		border-top:1px dashed #666;
+		border-right:none !important;
+	}
+
+	body > div#container > nav > ul ul {
+		background-color:transparent;
+		padding:0;
+		box-shadow:none;
+	}
+
+	body > div#container > nav > ul ul a {
+		padding-left:1em !important;
+	}
+
+	body > div#container > nav > ul ul ul a {
+		padding-left:2em !important;
+	}
+
+}
+
+/* =========================================== */
+
+body > div#container > form {
+	text-align:right;
+	padding-right:1.5em;
+}
+
+body > div#container > form input, body > div#container > form button {
+	-webkit-appearance: none;
+	outline: none;
+	border: none;
+	padding: 0.125em 0.5em;
+	font-size: 0.75em;
+	letter-spacing: 0.0625em;
+	background-color:transparent;
+}
+
+body > div#container > form input {
+	background-color:#e3a244;
+	border:1px solid #e3a244;
+	width:calc(17.391304347826086956521739130435% - 1.5em);
+	vertical-align:top;
+	margin:0;
+}
+
+body > div#container > form button {
+	color:#67100e;
+	letter-spacing:auto;
+}
+
+/* =========================================== */
+
+section#news {
+	float:right;
+	width:17.391304347826086956521739130435%;
+	padding:0 1.5em 0 0;
+}
+
+section#news div.wrapper {
+	font-size:0.75em;
+	line-height:1.25;
+}
+
+section#content {
+	float:right;
+	padding: 0 4.5em 0 1.5em;
+	/*width:auto;
+	max-width:65.21739130434782608695652173913%;*/
+	width:65.21739130434782608695652173913%;
+}
+
+body.home section#content, body.home section#content {
+	float:left;
+}
+
+body:not(.home) section#content {
+	margin-right:17.391304347826086956521739130435%;
+}
+
+section#content div.wrapper {
+	font-size:0.875em;
+	line-height:1.5;
+}
+
+section#sidebar {
+	float:left;
+	width:17.391304347826086956521739130435%;
+	padding:0 1.5em;
+}
+
+section#sidebar div.wrapper {
+	font-size:0.75em;
+	line-height:1.25;
+}
+
+main h1 {
+	font-size:1.25em;
+	text-transform:uppercase;
+	color:#67100e;
+}
+
+main h2 {
+	font-size:1.125em;
+}
+
+main h5 {
+	font-size:.7em;
+	font-weight: normal;
+}
+
+main section#sidebar h1, main section#news h1 {
+	color:#042E47;
+}
+
+p.byline {
+	font-size:0.75em;
+	font-style:italic;
+}
+
+.post.listing {
+	padding-top:1em;
+	margin-top:1em;
+	border-top:1px solid #000;
+}
+
+.post.listing:first-of-type {
+	padding-top:0;
+	margin-top:0;
+	border-top:none;
+}
+
+/* =========================================== */
+
+@media all and (max-width: 50em) {
+
+	body {
+		padding:0;
+	}
+
+	body.home section#sidebar {
+		display:none;
+	}
+
+	div#container {
+		background-image:none;
+		box-shadow:none;
+	}
+
+	body > div#container > nav {
+		background-position:left top;
+		background-size:auto 2em;
+	}
+
+	body > div#container > nav, footer {
+		padding-left:0;
+		padding-right:0;
+	}
+
+	body > div#container > form input {
+		width:auto;
+	}
+
+	section {
+		float:none !important;
+		width:auto !important;
+		max-width:none !important;
+		padding:1.5em !important;
+		margin:0 0 1em 0 !important;
+	}
+
+	section#news, section#sidebar {
+		background-color:#E2A143;
+	}
+
+}
