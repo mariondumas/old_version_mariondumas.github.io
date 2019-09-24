@@ -88,7 +88,7 @@ body {
 	position:relative;
 	width:100%;
 	height:auto;
-	background-color:#189951;
+	background-color:#3B8C80; <!--189951-->
 }
 
 div#container {
@@ -96,7 +96,7 @@ div#container {
 	width:100%;
 	max-width:71.875em;
 	margin:0 auto;
-	background-color:#fff;
+	background-color:#90B09E;
 	overflow:visible;
 	position:relative;
 	box-shadow:0.5em 0.5em 1em 0.125em rgba(0,0,0,0.25);
@@ -425,7 +425,7 @@ p.byline {
 	}
 
   section#news, section#sidebar {
-		background-color:#E2A143;
+		background-color:#90B09E;
 	}
 
 	div#container {
