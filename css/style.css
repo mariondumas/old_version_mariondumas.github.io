@@ -424,6 +424,10 @@ p.byline {
 		display:none;
 	}
 
+  section#news, section#sidebar {
+		background-color:#E2A143;
+	}
+
 	div#container {
 		background-image:none;
 		box-shadow:none;
@@ -451,8 +455,5 @@ p.byline {
 		margin:0 0 1em 0 !important;
 	}
 
-	section#news, section#sidebar {
-		background-color:#E2A143;
-	}
 
 }
