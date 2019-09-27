@@ -179,7 +179,7 @@ body > div#container > nav > ul ul {
 	left:0;
 	z-index:4;
 	text-align:left;
-	background-color:#042E47;
+	background-color:#fff<!--042E47>>;
 	width:12em;
 	padding: 0.75em 0 0.5em 0;
 	box-shadow:0.5em 0.5em 1em 0.125em rgba(0,0,0,0.25);
@@ -212,7 +212,7 @@ body > div#container > nav > ul > li > ul a {
 
 
 body > div#container > nav a {
-	color:#F0D8B2;
+	color:#0000<!--F0D8B2>>;
 }
 
 body > div#container > nav a:hover {
