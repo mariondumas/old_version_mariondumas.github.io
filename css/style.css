@@ -120,12 +120,12 @@ footer div.wrapper > * {
 /* =========================================== */
 
 body > div#container > nav {
-	background-color:#000000<!--042E47>>;
+	background-color:#000000; <!--042E47>>
 	overflow:visible;
 	padding:1em 1em 1em 16%;
 	letter-spacing:0.03125em;
 
-	background:#042E47 url('graphics/headshot_name.png') scroll no-repeat left center;
+	background:##000000 <!--42E47--> url('graphics/headshot_name.png') scroll no-repeat left center;
 	background-size:17.391304347826086956521739130435% auto;
 }
 
@@ -179,7 +179,7 @@ body > div#container > nav > ul ul {
 	left:0;
 	z-index:4;
 	text-align:left;
-	background-color:#fff<!--042E47>>;
+	background-color:#fff; <!--042E47>>
 	width:12em;
 	padding: 0.75em 0 0.5em 0;
 	box-shadow:0.5em 0.5em 1em 0.125em rgba(0,0,0,0.25);
