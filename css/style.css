@@ -96,7 +96,7 @@ div#container {
 	width:100%;
 	max-width:71.875em;
 	margin:0 auto;
-	background-color:#90B09E;
+	background-color:#fff;
 	overflow:visible;
 	position:relative;
 	box-shadow:0.5em 0.5em 1em 0.125em rgba(0,0,0,0.25);
@@ -125,7 +125,7 @@ body > div#container > nav {
 	padding:1em 1em 1em 16%;
 	letter-spacing:0.03125em;
 
-	background:#042E47 url('images/wendy-cadge-branding.gif') scroll no-repeat left center;
+	background:#042E47 url('graphics/headshot_name.png') scroll no-repeat left center;
 	background-size:17.391304347826086956521739130435% auto;
 }
 
