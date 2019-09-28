@@ -24,6 +24,13 @@
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
+table {
+  width: 100%;
+}
+th, td {
+  padding: 0 0 0 10px;
+  text-align: left;
+}
 img {
 	border:none;
 	vertical-align:middle;
@@ -49,14 +56,15 @@ h1, h2, h3, h4, strong, b {
 }
 
 a {
-	color:#760000;
+	color:	#000000; <!--#760000-->
 	text-decoration:none;
 }
 /*a:visited {
 	color:#9E1111;
 }*/
 a:hover {
-	color:#042e47;
+	color: #760000; <!--#042e47-->
+  text-decoration: none;
 }
 
 .alignright {
@@ -88,20 +96,20 @@ body {
 	position:relative;
 	width:100%;
 	height:auto;
-	background-color: #fff<!--#3B8C80-->; <!--189951-->
+	background-color: #fff;
 }
 
 div#container {
 	display:block;
 	width:100%;
-	max-width:71.875em;
+	max-width:73em;
 	margin:0 auto;
 	background-color:#fff;
 	overflow:visible;
 	position:relative;
 	box-shadow:0.5em 0.5em 1em 0.125em rgba(0,0,0,0.25);
 
-	background:#fff url('images/sidebar.gif') scroll repeat-y left top;
+	background:#fff scroll repeat-y left top;
 	background-size:17.391304347826086956521739130435% auto;
 }
 
@@ -119,18 +127,27 @@ footer div.wrapper > * {
 
 /* =========================================== */
 
-body > div#container > nav {
-	background-color:#fff; <!--042E47>>
-	overflow:visible;
-	padding:1em 1em 1em 16%;
-	letter-spacing:0.03125em;
 
-	background:#fff <!--42E47--> url('graphics/headshot_name.png') scroll no-repeat left center;
+body > div#container > nav {
+	background-color:#fff;
+	overflow:visible;
+	padding:1em 1em 1em 1em;
+	letter-spacing:0.03125em;
+	background:#fff scroll no-repeat left center;
 	background-size:17.391304347826086956521739130435% auto;
+
 }
 
+body > div#container > nav > p#name {
+  text-align:center;
+  width:16%;
+  display:block;
+  float:left;
+  font-size: 1.2em;
+  font-family: Quicksand;
+}
 nav ul {
-	padding:0;
+	padding:0 0 0 20%;
 	margin:0;
 	list-style:none;
 }
@@ -212,11 +229,12 @@ body > div#container > nav > ul > li > ul a {
 
 
 body > div#container > nav a {
-	color:#000000<!--F0D8B2>>;
+	color:#00000;
+  text-decoration: none;
 }
 
 body > div#container > nav a:hover {
-	color:#fff;
+	color:#760000;
 }
 
 /* =========================================== */
