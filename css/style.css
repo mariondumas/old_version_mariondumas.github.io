@@ -395,9 +395,10 @@ section#sidebar div.wrapper {
 }
 
 main h1 {
-	font-size:1.25em;
+  width:100%;
+	font-size:1.2em;
 	text-transform:uppercase;
-	color:#67100e;
+	color:#A6B5AD;
 }
 
 main h2 {
