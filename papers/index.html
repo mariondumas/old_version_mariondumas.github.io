@@ -20,7 +20,23 @@
     <script type='text/javascript' src='https://mariondumas.github.io/js/jquery.js'></script>
     <script type='text/javascript' src='https://mariondumas.github.io/js/jquery-migrate.min.js'></script>
     <link rel="canonical" href="https://mariondumas.github.io/papers/" />
+
     <!-- BEGIN GADWP v5.1.2.5 Universal Analytics - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+		<script>
+function myFunction() {
+	// Get the checkbox
+	var checkBox = document.getElementById("myCheck");
+	// Get the output text
+	var text = document.getElementById("text");
+
+	// If the checkbox is checked, display the output text
+	if (checkBox.checked == true){
+		text.style.display = "block";
+	} else {
+		text.style.display = "none";
+	}
+}
+</script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -97,7 +113,9 @@
 		<div class="wrapper">
 
 							<div class="post">
-<p><strong>2019</strong>. &#8220;<a href="https://mariondumas.github.io/uploads/papers/DugouaDumas2019_Theory.pdf"> Green product innovation in industrial networks."</a> with Eugenie Dugoua.<em> in review</em></p>
+<p><strong>2019</strong>. &#8220;<a href="https://mariondumas.github.io/uploads/papers/DugouaDumas2019_Theory.pdf"> Green product innovation in industrial networks."</a> with Eugenie Dugoua.<em> in review</em> <br>
+<button class="abstract">Abstract</button>
+<span id="abstracttext" style="display:none">abstract text</span></p>
 <!--<p><strong>2017.</strong> <a href="http://www.wendycadge.com/wp-content/uploads/2017/10/After-the-DNR-Hastings-Center-Report-2017.pdf" target="_blank" rel="noopener">“After the DNR: Surrogates who persist in requesting cardiopulmonary resuscitation”</a> with Ellen M. Robinson, Angelika Zollfrank, M. Cornelia Cremens, Andrew M. Courtwright. <i>Hastings Center Report.</i></p>
 <p><strong>2017.</strong> “What do Non-clergy Spiritual Care Providers Contribute to End of Life Care in Israel? A Qualitative Study” with Michal Pagis and Orly Tal. <em>Journal of Religion and Health.</em> 56(2):614-622.</p>
 <p><strong>2015.</strong> <a href="http://www.wendycadge.com/wp-content/uploads/2017/10/Zollrfanketal2015.pdf" target="_blank" rel="noopener">“Teaching Healthcare Providers How to Provide Spiritual Care: A Pilot Study</a>” with Angelika Zollfrank, Kelly Trevino, Tyler VanderWeele, Michael Balboni, Kathleen Gallivan, George Fitchett, Mary Martha Thiel, and Tracy Balboni. <i>Journal of Palliative Medicine.</i>18(5): 408-14.</p>
