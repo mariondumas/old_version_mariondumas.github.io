@@ -37,7 +37,8 @@ img {
 	max-width:100%;
 	height:auto;
 }
-button.abstract { background:none;border:none; }
+
+#abstract {display: none;}
 
 h1, h2, h3, h4, h5, p, ol, ul, form {
 	margin:0 0 1em 0;
