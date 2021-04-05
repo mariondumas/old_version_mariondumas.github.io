@@ -360,7 +360,7 @@ body > div#container > form button {
 section#news {
 	float:right;
 	width:17.391304347826086956521739130435%;
-	padding:0 1.5em 0 0;
+	padding:0 1.5em;
 }
 
 section#news div.wrapper {
